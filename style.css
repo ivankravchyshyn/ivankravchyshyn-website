@@ -282,3 +282,19 @@ footer a {
     margin-bottom: 44px;
   }
 }
+/* HYMN OF EUROPE — project poster */
+
+.hymn-project {
+  width: 100%;
+}
+
+.hymn-poster {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.hymn-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

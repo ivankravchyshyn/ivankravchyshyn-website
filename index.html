@@ -9,11 +9,11 @@
 
   <meta
     name="description"
-    content="Official website of film director Ivan Kravchyshyn. Projects in development, feature films, documentary films and photography."
+    content="Official website of film director Ivan Kravchyshyn. Feature films, documentary films, photography and projects in development."
   >
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
@@ -21,24 +21,24 @@
        HEADER
   ====================================================== -->
 
-  <header>
+  <header class="site-header">
 
-    <div>
+    <div class="identity">
       <h1>IVAN KRAVCHYSHYN</h1>
-      <p>FILM DIRECTOR</p>
+      <p>FILM DIRECTOR · DOCUMENTARY &amp; FICTION</p>
     </div>
 
-    <nav>
+    <nav class="main-navigation">
       <a href="#in-development">IN DEVELOPMENT</a>
       <a href="#feature-films">FEATURE FILMS</a>
-      <a href="#documentary-films">DOCUMENTARY FILMS</a>
+      <a href="#documentary-films">DOCUMENTARY</a>
       <a href="#photography">PHOTOGRAPHY</a>
       <a href="#biography">BIOGRAPHY</a>
       <a href="#contact">CONTACT</a>
     </nav>
 
-    <div>
-      <span>EN</span>
+    <div class="languages">
+      <span class="active">EN</span>
       <span>DE</span>
       <span>UA</span>
     </div>
@@ -52,22 +52,31 @@
          01 — IN DEVELOPMENT
     ====================================================== -->
 
-    <section id="in-development">
+    <section id="in-development" class="section">
 
-      <header>
-        <p>01</p>
+      <header class="section-header">
+        <span class="section-number">01</span>
         <h2>IN DEVELOPMENT</h2>
       </header>
 
-     <article class="hymn-project">
+      <div class="development-grid">
 
-    <div class="hymn-poster">
-        <img src="hymn-of-europe.png"
-             alt="Hymn of Europe — The Age of Beethoven">
+        <article class="development-project">
+          <img
+            src="ASSETS/IMAGES/DEVELOPMENT/hymn-of-europe.jpg"
+            alt="Hymn of Europe — The Age of Beethoven"
+          >
+        </article>
 
-    </div>
+        <article class="development-project">
+          <img
+            src="ASSETS/IMAGES/DEVELOPMENT/brüderliche-liebe.jpg"
+            alt="Brüderliche Liebe"
+          >
+        </article>
 
-</article>
+      </div>
+
     </section>
 
 
@@ -75,59 +84,79 @@
          02 — FEATURE FILMS
     ====================================================== -->
 
-    <section id="feature-films">
+    <section id="feature-films" class="section">
 
-      <header>
-        <p>02</p>
+      <header class="section-header">
+        <span class="section-number">02</span>
         <h2>FEATURE FILMS</h2>
       </header>
 
+      <div class="feature-grid">
 
-      <article>
+        <article class="film-card">
 
-        <h3>THE THREE OF US / ТРОЄ</h3>
+          <img
+            src="ASSETS/IMAGES/FEATURE-FILMS/troie.jpg"
+            alt="The Three of Us"
+          >
 
-        <p>Feature Film</p>
+          <h3>THE THREE OF US / ТРОЄ</h3>
 
-        <a href="#">WATCH TRAILER</a>
+          <p>Feature Film · Ukraine · 2025</p>
 
-      </article>
+          <a href="#" class="film-link">WATCH TRAILER</a>
 
-
-      <article>
-
-        <h3>
-          THE FLIGHT OF THE GOLDEN FLY /
-          ПОЛІТ ЗОЛОТОЇ МУШКИ
-        </h3>
-
-        <p>Feature Film · 2015 · Ukraine</p>
-
-        <a href="#">WATCH TRAILER</a>
-
-      </article>
+        </article>
 
 
-      <article>
+        <article class="film-card">
 
-        <h3>УДИВИ МЕНЯ</h3>
+          <img
+            src="ASSETS/IMAGES/FEATURE-FILMS/the-flight-of-the-golden-fly.jpg"
+            alt="The Flight of the Golden Fly"
+          >
 
-        <p>Feature Film · 2008</p>
+          <h3>THE FLIGHT OF THE GOLDEN FLY</h3>
 
-        <a href="#">WATCH TRAILER</a>
+          <p>Feature Film · Ukraine · 2015</p>
 
-      </article>
+          <a href="#" class="film-link">WATCH TRAILER</a>
+
+        </article>
 
 
-      <article>
+        <article class="film-card">
 
-        <h3>STOP REVOLUTION / ПРОРВЕМОСЬ!</h3>
+          <img
+            src="ASSETS/IMAGES/FEATURE-FILMS/udivi-menya.jpg"
+            alt="Udivi Menya"
+          >
 
-        <p>Feature Film</p>
+          <h3>UDIVI MENYA</h3>
 
-        <a href="#">WATCH TRAILER</a>
+          <p>Feature Film · Ukraine · 2008</p>
 
-      </article>
+          <a href="#" class="film-link">WATCH TRAILER</a>
+
+        </article>
+
+
+        <article class="film-card">
+
+          <img
+            src="ASSETS/IMAGES/FEATURE-FILMS/stop-revolution.jpg"
+            alt="Stop Revolution"
+          >
+
+          <h3>STOP REVOLUTION!</h3>
+
+          <p>Feature Film · Ukraine · 2006</p>
+
+          <a href="#" class="film-link">WATCH TRAILER</a>
+
+        </article>
+
+      </div>
 
     </section>
 
@@ -136,20 +165,119 @@
          03 — DOCUMENTARY FILMS
     ====================================================== -->
 
-    <section id="documentary-films">
+    <section id="documentary-films" class="section">
 
-      <header>
-        <p>03</p>
+      <header class="section-header">
+        <span class="section-number">03</span>
         <h2>DOCUMENTARY FILMS</h2>
       </header>
 
-      <p>
-        Documentary films and television productions.
-      </p>
+      <div class="documentary-grid">
 
-      <a href="#">
-        VIEW DOCUMENTARY FILMOGRAPHY
-      </a>
+        <article class="documentary-card">
+          <img
+            src="ASSETS/IMAGES/DOCUMENTARY-FILMS/koroliov.jpg"
+            alt="Five Deaths of Academician Korolev"
+          >
+          <h3>FIVE DEATHS OF ACADEMICIAN KOROLEV</h3>
+        </article>
+
+
+        <article class="documentary-card">
+          <img
+            src="ASSETS/IMAGES/DOCUMENTARY-FILMS/young-guard.jpg"
+            alt="Young Guard — The Death Counter"
+          >
+          <h3>YOUNG GUARD: THE DEATH COUNTER</h3>
+        </article>
+
+
+        <article class="documentary-card">
+          <img
+            src="ASSETS/IMAGES/DOCUMENTARY-FILMS/black-infantry.jpg"
+            alt="Black Infantry — Victory Day"
+          >
+          <h3>BLACK INFANTRY: VICTORY DAY</h3>
+        </article>
+
+
+        <article class="documentary-card">
+          <img
+            src="ASSETS/IMAGES/DOCUMENTARY-FILMS/1377.jpg"
+            alt="1377 — Burned Alive"
+          >
+          <h3>1377: BURNED ALIVE</h3>
+        </article>
+
+
+        <article class="documentary-card">
+          <img
+            src="ASSETS/IMAGES/DOCUMENTARY-FILMS/ukraine-1918.jpg"
+            alt="Ukraine 1918"
+          >
+          <h3>UKRAINE 1918</h3>
+        </article>
+
+      </div>
+
+
+      <!-- DOCUMENTARY PROJECTS & ARCHIVES -->
+
+      <div class="documentary-projects">
+
+        <h3 class="subsection-title">
+          DOCUMENTARY PROJECTS &amp; ARCHIVES
+        </h3>
+
+        <div class="documentary-project-grid">
+
+          <article>
+            <img
+              src="ASSETS/IMAGES/DOCUMENTARY-PROJECTS-SERIES/restreacted-area.jpg"
+              alt="Restricted Area"
+            >
+            <h4>RESTRICTED AREA</h4>
+          </article>
+
+
+          <article>
+            <img
+              src="ASSETS/IMAGES/DOCUMENTARY-PROJECTS-SERIES/in-search-of-the-ark.jpg"
+              alt="In Search of the Ark"
+            >
+            <h4>IN SEARCH OF THE ARK</h4>
+          </article>
+
+
+          <article>
+            <img
+              src="ASSETS/IMAGES/DOCUMENTARY-PROJECTS-SERIES/letters-to-the-front.jpg"
+              alt="Letters to the Front"
+            >
+            <h4>LETTERS TO THE FRONT</h4>
+          </article>
+
+
+          <article>
+            <img
+              src="ASSETS/IMAGES/DOCUMENTARY-PROJECTS-SERIES/the-tree.jpg"
+              alt="The Tree"
+            >
+            <h4>THE TREE / DREVO</h4>
+          </article>
+
+
+          <article>
+            <img
+              src="ASSETS/IMAGES/DOCUMENTARY-PROJECTS-SERIES/letters-from-the-front.jpg"
+              alt="Letters from the Front"
+            >
+            <h4>LETTERS FROM THE FRONT</h4>
+          </article>
+
+        </div>
+
+      </div>
 
     </section>
 
@@ -158,20 +286,70 @@
          04 — PHOTOGRAPHY
     ====================================================== -->
 
-    <section id="photography">
+    <section id="photography" class="section">
 
-      <header>
-        <p>04</p>
+      <header class="section-header">
+        <span class="section-number">04</span>
         <h2>PHOTOGRAPHY</h2>
       </header>
 
-      <p>
-        Photography projects.
-      </p>
+      <div class="photography-grid">
 
-      <a href="#">
-        VIEW PHOTOGRAPHY PROJECTS
-      </a>
+        <article>
+          <img
+            src="ASSETS/IMAGES/PHOTOGRAPHY/letters-to-the-front.jpg"
+            alt="Letters to the Front"
+          >
+
+          <h3>LETTERS TO THE FRONT</h3>
+          <p>Documentary &amp; Ethnographic Project · Ukraine · Since 2015</p>
+        </article>
+
+
+        <article>
+          <img
+            src="ASSETS/IMAGES/PHOTOGRAPHY/letters-from-the-front.jpg"
+            alt="Letters from the Front"
+          >
+
+          <h3>LETTERS FROM THE FRONT</h3>
+          <p>War Documentary Project · Ukraine · Since 2014</p>
+        </article>
+
+
+        <article>
+          <img
+            src="ASSETS/IMAGES/PHOTOGRAPHY/kupala.jpg"
+            alt="Kupala"
+          >
+
+          <h3>KUPALA</h3>
+          <p>Ethnographic Photography Project · Ukraine</p>
+        </article>
+
+
+        <article>
+          <img
+            src="ASSETS/IMAGES/PHOTOGRAPHY/pupen-selen.jpg"
+            alt="Pupen Selen"
+          >
+
+          <h3>PUPEN SELEN</h3>
+          <p>Photography &amp; Short Film Project · Germany · 2026</p>
+        </article>
+
+
+        <article>
+          <img
+            src="ASSETS/IMAGES/PHOTOGRAPHY/shchedryk.jpg"
+            alt="Shchedryk"
+          >
+
+          <h3>SHCHEDRYK</h3>
+          <p>Ethnographic Photography Project · Ukraine</p>
+        </article>
+
+      </div>
 
     </section>
 
@@ -180,29 +358,90 @@
          05 — BIOGRAPHY
     ====================================================== -->
 
-    <section id="biography">
+    <section id="biography" class="section">
 
-      <header>
-        <p>05</p>
+      <header class="section-header">
+        <span class="section-number">05</span>
         <h2>BIOGRAPHY</h2>
       </header>
 
-      <h3>IVAN KRAVCHYSHYN</h3>
+      <div class="biography-layout">
 
-      <p>
-        Film Director · Documentary & Fiction
-      </p>
+        <div class="biography-photo">
 
-      <p>
-        Ivan Kravchyshyn is a Ukrainian film director,
-        documentary filmmaker and cinematographer based in Germany.
-        His work includes four feature films and numerous documentary
-        and television productions.
-      </p>
+          <img
+            src="ASSETS/IMAGES/BIOGRAPHY/ivan-kravchyshyn.jpg"
+            alt="Ivan Kravchyshyn"
+          >
 
-      <a href="#">
-        FULL BIOGRAPHY
-      </a>
+        </div>
+
+
+        <div class="biography-text">
+
+          <p>
+            Ivan Kravchyshyn is a Ukrainian film director and documentary
+            filmmaker with more than three decades of professional experience
+            in film and television.
+          </p>
+
+          <p>
+            His work includes four feature films and around 100 documentaries
+            and television productions. His films have been presented at
+            international festivals and industry events including Karlovy Vary,
+            PRIX EUROPA in Berlin, Cottbus, Bergen, Bucharest, Beirut,
+            New York, Odesa and Kinoshock.
+          </p>
+
+          <p>
+            His feature film <em>Stop Revolution!</em> competed in the
+            East of the West Competition at the Karlovy Vary International
+            Film Festival, while his documentary <em>In Search of the Ark</em>
+            received the Golden Cedar Grand Prize in Beirut.
+            He was also recognized with Ukraine’s Teletriumph Award
+            for Best Director.
+          </p>
+
+          <p>
+            Working across fiction and documentary cinema, he has developed
+            projects from the initial idea and screenplay through directing
+            and cinematography to editing and post-production. His background
+            as a cinematographer and editor has shaped a strongly visual
+            approach to directing, with a particular focus on character,
+            atmosphere and authentic environments.
+          </p>
+
+          <p>
+            Since relocating to Germany in 2022, Kravchyshyn has continued
+            his career within the German and European film industry.
+            In 2026, he completed the IHK qualification as
+            Mediengestalter Bild und Ton in Cologne.
+          </p>
+
+          <p>
+            Based in North Rhine-Westphalia, he is currently developing
+            new documentary and fiction projects for the European market.
+          </p>
+
+        </div>
+
+
+        <aside class="festival-list">
+
+          <h3>SELECTED FESTIVALS</h3>
+
+          <p>KARLOVY VARY</p>
+          <p>BERLIN</p>
+          <p>COTTBUS</p>
+          <p>BERGEN</p>
+          <p>BEIRUT</p>
+          <p>BUCHAREST</p>
+          <p>NEW YORK</p>
+          <p>ODESA</p>
+
+        </aside>
+
+      </div>
 
     </section>
 
@@ -213,42 +452,43 @@
        CONTACT
   ====================================================== -->
 
-  <footer id="contact">
+  <footer id="contact" class="site-footer">
 
-    <p>
-      IVAN KRAVCHYSHYN
-    </p>
+    <a
+      class="contact-email"
+      href="mailto:ivan.kravchyshyn@web.de"
+    >
+      ivan.kravchyshyn@web.de
+    </a>
 
-    <p>
-      PROJECT / CO-PRODUCTION ENQUIRIES
-    </p>
 
-    <nav>
+    <nav class="social-links">
 
-      <a href="#">
-        EMAIL
+      <a href="#" aria-label="IMDb">IMDb</a>
+
+      <a
+        href="https://www.crew-united.com/de/Ivan-Kravchyshyn_913106.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Crew United"
+      >
+        CU
       </a>
 
-      <a href="#">
-        IMDb
-      </a>
-
-      <a href="#">
-        Crew United
-      </a>
-
-      <a href="#">
-        LinkedIn
+      <a
+        href="https://www.linkedin.com/in/ivan-kravchyshyn-698411243/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        in
       </a>
 
     </nav>
 
-    <p>
-      Cologne / NRW · Germany
-    </p>
 
-    <p>
-      © 2026 Ivan Kravchyshyn
+    <p class="copyright">
+      © 2026 Ivan Kravchyshyn. All rights reserved.
     </p>
 
   </footer>

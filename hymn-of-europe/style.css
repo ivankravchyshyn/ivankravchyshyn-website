@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap');
+*{box-sizing:border-box}html{background:#08090b}body{margin:0;background:#08090b;color:white;font-family:Arial,sans-serif}.toolbar{position:fixed;top:12px;right:12px;z-index:9999;display:flex;gap:8px;background:#15191fe8;padding:10px;border:1px solid #666;border-radius:8px;box-shadow:0 5px 20px #0008}.toolbar button{background:#343b46;color:#fff;border:1px solid #667;border-radius:5px;padding:8px 12px;cursor:pointer;font-size:12px}.toolbar button[aria-pressed=true]{background:#aeb8c6;color:#111}.page{width:min(100%,1536px);margin:auto}.section{position:relative;width:100%;container-type:inline-size;overflow:hidden}.bg,.reference{display:block;width:100%;height:100%;position:absolute;inset:0}.reference{display:none}.text-layer{position:absolute;white-space:pre;line-height:1;transform-origin:top left;pointer-events:none;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:400}.text-layer a{pointer-events:auto;color:inherit;text-decoration:none}.page.reference-mode .reference{display:block}.page.reference-mode .bg,.page.reference-mode .text-layer{display:none}.page.compare-mode .reference{display:block;opacity:.5;mix-blend-mode:difference;pointer-events:none}.page.compare-mode .text-layer{opacity:.85}@media(max-width:700px){.toolbar{top:auto;bottom:8px;right:8px;left:8px;justify-content:center}.toolbar button{padding:8px;font-size:11px}}
+
+
+/* Preview 03: use Photoshop font metrics, never distort glyph height. */
+.text-layer{white-space:pre;line-height:1;transform-origin:0 0;margin:0;padding:0;display:block;font-synthesis:none;letter-spacing:normal;}
+
+/* Calibrated clean English preview: hide comparison toolbar and reference images. */
+.toolbar{display:none!important}
+.reference{display:none!important}
+
+/* RESPONSIVE TEST 01 — desktop remains pixel-equivalent to approved EN 01. */
+.mobile-view-controls{display:none}
+@media(max-width:767px){
+ body{overflow-x:hidden}
+ .mobile-view-controls{display:flex;position:sticky;top:0;z-index:10000;gap:8px;justify-content:center;align-items:center;padding:9px 10px;background:#111720;color:#fff;border-bottom:1px solid #4b5563;font:13px Arial,sans-serif}
+ .mobile-view-controls button{background:#283341;border:1px solid #778394;border-radius:5px;color:#fff;padding:9px 11px;font-size:12px}
+ .mobile-view-controls button[aria-pressed="true"]{background:#e0e5eb;color:#101820}
+ .mobile-view-controls span{font-size:11px;color:#c3cbd6}
+ body.mobile-readable{overflow-x:auto}
+ body.mobile-readable .page{width:900px;max-width:none;margin:0}
+ body.mobile-readable .mobile-view-controls{width:100vw;position:sticky;left:0}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Multilingual prototype: keep the approved full-width composition. */
+.language-switch{position:fixed;right:16px;bottom:16px;z-index:11000;display:flex;gap:4px;background:#121720e8;padding:6px;border:1px solid #68717b;border-radius:7px}.language-switch button{color:white;background:#253140;border:1px solid #657181;border-radius:4px;padding:9px 13px;cursor:pointer;font-weight:600}.language-switch button[aria-pressed="true"]{background:#e4e8ed;color:#121820}.translation-note{position:fixed;left:12px;bottom:12px;z-index:11000;background:#121720ed;color:#fff;padding:9px 12px;font:12px Arial,sans-serif;max-width:min(65vw,430px);border-radius:6px}.translation-note[hidden]{display:none}
+
+/* Integration 02: expose existing EN/DE selector near project navigation. */
+.language-switch{top:12px;bottom:auto;right:16px}
+
+/* STAGE 04.1: unified unobtrusive typography, no diagnostic buttons */
+#back-to-home{background:transparent!important;border:0!important;padding:0!important;top:16px!important;left:24px!important;color:#303030!important;font:500 15px 'Barlow Condensed',Arial,sans-serif!important}
+.language-switch{top:17px!important;right:25px!important;bottom:auto!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;gap:18px!important;align-items:center!important}
+.language-switch button,.language-switch .ua-home{font:500 18px 'Barlow Condensed',Arial,sans-serif!important;background:transparent!important;border:0!important;border-radius:0!important;color:#858585!important;padding:0!important;box-shadow:none!important;text-decoration:none!important;cursor:pointer!important;line-height:1.2!important}
+.language-switch button[aria-pressed=true]{color:#424242!important;text-decoration:underline!important;text-underline-offset:4px!important}
+.language-switch button:hover,.language-switch .ua-home:hover{color:#222!important}

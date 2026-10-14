@@ -9,8 +9,10 @@ for(const sec of sections){
  const bg=el('img','bg');bg.src=`images/${sec.id}_background.png`;bg.alt='';
  const ref=el('img','reference');ref.src=`images/${sec.id}_reference.png`;ref.alt='Photoshop reference';box.append(bg,ref);
  for(const t of (sec.texts||[])){
-  const s=styles[t.path]||{},span=el('span','text-layer');
+  const isEmail=t.path.includes('ivan.kravchyshyn@web.de');
+  const s=styles[t.path]||{},span=el(isEmail?'a':'span','text-layer');
   span.textContent=t.text.replace(/\r/g,'\n').replace(/^\n+/,'');span.title=t.path;
+  if(isEmail){span.href='mailto:ivan.kravchyshyn@web.de';span.setAttribute('aria-label','Email Ivan Kravchyshyn');span.style.pointerEvents='auto';span.style.textDecoration='none';span.style.cursor='auto'}
   const fontSize=Number(t.size)||16;
   span.style.left=`${t.x}px`;
   span.style.fontSize=`${fontSize}px`;

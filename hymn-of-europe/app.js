@@ -10,9 +10,9 @@ for(const sec of sections){
  const ref=el('img','reference');ref.src=`images/${sec.id}_reference.png`;ref.alt='Photoshop reference';box.append(bg,ref);
  for(const t of (sec.texts||[])){
   const isEmail=t.path.includes('ivan.kravchyshyn@web.de');
-  const s=styles[t.path]||{},span=el(isEmail?'a':'span','text-layer');
-  span.textContent=t.text.replace(/\r/g,'\n').replace(/^\n+/,'');span.title=t.path;
-  if(isEmail){span.href='mailto:ivan.kravchyshyn@web.de';span.setAttribute('aria-label','Email Ivan Kravchyshyn');span.style.pointerEvents='auto';span.style.textDecoration='none';span.style.cursor='auto'}
+  const s=styles[t.path]||{},span=el('span','text-layer');
+  const text=t.text.replace(/\r/g,'\n').replace(/^\n+/,'');span.title=t.path;
+  if(isEmail){const link=el('a','email');link.href='mailto:ivan.kravchyshyn@web.de';link.setAttribute('aria-label','Email Ivan Kravchyshyn');link.textContent=text;span.append(link)}else span.textContent=text;
   const fontSize=Number(t.size)||16;
   span.style.left=`${t.x}px`;
   span.style.fontSize=`${fontSize}px`;

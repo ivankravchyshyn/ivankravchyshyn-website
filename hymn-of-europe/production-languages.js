@@ -31,7 +31,8 @@ function apply(){
   const base=original.get(el)||'';
   const translated=translations[key]?.de;
   const isDE=language==='de';
-  el.textContent=isDE?(d.text!==undefined?d.text:(translated!==undefined?translated:base)):base;
+  const text=isDE?(d.text!==undefined?d.text:(translated!==undefined?translated:base)):base;
+  const email=el.querySelector('a.email');if(email)email.textContent=text;else el.textContent=text;
   const x=en?.checked?en.dx:0, y=en?.checked?en.dy:0;
   const sx=en?.checked?en.sx:100, sy=en?.checked?en.sy:100;
   const dx=isDE?(d.dx||0):0, dy=isDE?(d.dy||0):0;

@@ -1,0 +1,5 @@
+:root{--design-width:1536px;--stage-scale:1}
+html,body{width:100%;margin:0;overflow-x:hidden;scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0}
+.responsive-stage-shell{position:relative;width:min(100%,var(--design-width));margin:0 auto;overflow:visible}
+.responsive-stage{position:absolute!important;left:0;top:0;width:var(--design-width)!important;max-width:none!important;margin:0!important;transform:scale(var(--stage-scale));transform-origin:top left}

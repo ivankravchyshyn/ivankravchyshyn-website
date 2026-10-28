@@ -42,3 +42,9 @@
 .section{width:1536px!important;container-type:normal}
 .bg,.reference{width:1536px!important}
 #back-to-home{position:absolute!important}
+
+/* Centre the approved two-line German institutional-collaboration copy on the yellow line below. */
+html[lang="de"] .text-layer[title="09_BLOCK/We are seeking scientific collaboration with Beethoven-Haus Bonn"]{width:711.659px!important;text-align:center!important}
+
+/* Lower only the approved German institutional-collaboration partner line. */
+html[lang="de"] .text-layer[title="09_BLOCK/ARCHIVES · MUSEUMS · UNIVERSITIES · HISTORIANS · MUSICOLOGISTS"]{translate:0 6px!important}
